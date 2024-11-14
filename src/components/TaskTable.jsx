@@ -1,7 +1,7 @@
 import React from 'react';
 import './TaskTable.css';
 
-const TaskTable = ({ title, tasks, onDelete }) => {
+const TaskTable = ({ title, tasks, onDelete, onUpdate }) => {
     return (
         <div className="task-table">
             <h3>{title}</h3>
@@ -30,6 +30,9 @@ const TaskTable = ({ title, tasks, onDelete }) => {
                             <td>
 
                                 <button onClick={() => onDelete(task.id)}>Delete</button>
+                                <button onClick={() => onUpdate({ ...task, completed: !task.completed })}>
+                                    {task.completed ? 'Mark Pending' : 'Mark Complete'}
+                                </button>
                             </td>
                         </tr>
                     ))}

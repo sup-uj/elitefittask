@@ -19,11 +19,13 @@ const App = () => {
   };
   const deleteTask = (id) => setTasks(tasks.filter(task => task.id !== id));
 
+  const updateTask = (updatedTask) => setTasks(tasks.map(task => task.id === updatedTask.id ? updatedTask : task));
+
   return (
     <div className="App">
       <h1>Task Manager</h1>
       <TaskForm onAdd={addTask} />
-      <Dashboard tasks={tasks}  onDelete={deleteTask}/>
+      <Dashboard tasks={tasks}  onDelete={deleteTask} onUpdate={updateTask}/>
     </div>
   );
 };
