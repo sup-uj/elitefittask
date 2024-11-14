@@ -2,6 +2,11 @@ import React from 'react';
 import './TaskTable.css';
 
 const TaskTable = ({ title, tasks, onDelete, onUpdate }) => {
+
+    const truncateDescription = (text, maxLength = 20) => {
+        return text.length > maxLength ? text.slice(0, maxLength) + '...' : text;
+      };
+
     return (
         <div className="task-table">
             <h3>{title}</h3>
@@ -20,7 +25,7 @@ const TaskTable = ({ title, tasks, onDelete, onUpdate }) => {
                     {tasks.map((task) => (
                         <tr key={task.id} className={task.completed ? 'completed' : ''}>
                             <td>{task.title}</td>
-                            <td>{task.description}</td>
+                            <td>{truncateDescription(task.description)}</td>
                             <td>{task.dueDate}</td>
                             <td>
                                 <span className={`priority ${task.priority.toLowerCase()}`}>
