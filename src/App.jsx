@@ -17,12 +17,13 @@ const App = () => {
     const newTask = { ...task, id: Date.now() };
     setTasks([newTask, ...tasks]);
   };
+  const deleteTask = (id) => setTasks(tasks.filter(task => task.id !== id));
 
   return (
     <div className="App">
       <h1>Task Manager</h1>
       <TaskForm onAdd={addTask} />
-      <Dashboard tasks={tasks} />
+      <Dashboard tasks={tasks}  onDelete={deleteTask}/>
     </div>
   );
 };
