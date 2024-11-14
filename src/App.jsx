@@ -13,7 +13,10 @@ const App = () => {
     localStorage.setItem('tasks', JSON.stringify(tasks));
   }, [tasks]);
 
-  const addTask = (task) => setTasks([...tasks, task]);
+  const addTask = (task) => {
+    const newTask = { ...task, id: Date.now() };
+    setTasks([newTask, ...tasks]);
+  };
 
   return (
     <div className="App">
