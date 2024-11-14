@@ -13,6 +13,7 @@ const TaskTable = ({ title, tasks, onDelete, onUpdate }) => {
                         <th>Due Date</th>
                         <th>Priority</th>
                         <th>Status</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
