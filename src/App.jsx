@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Dashboard from './components/Dashboard.jsx';
 import TaskForm from './components/TaskFrom';
 import './index.css';
 
@@ -18,6 +19,7 @@ const App = () => {
     <div className="App">
       <h1>Task Manager</h1>
       <TaskForm onAdd={addTask} />
+      <Dashboard tasks={tasks} />
     </div>
   );
 };
