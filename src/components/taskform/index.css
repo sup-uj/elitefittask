@@ -1,0 +1,39 @@
+.task-form {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between each element */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  }
+  
+  .task-form input[type="text"],
+  .task-form input[type="date"],
+  .task-form select,
+  .task-form button {
+    padding: 4px;
+    font-size: 1rem;
+  }
+  
+  .task-form input[type="text"] {
+    width: 20%; /* Adjust width as needed */
+  }
+  
+  .task-form input[type="date"] {
+    width: 15%; /* Adjust width as needed */
+  }
+  
+  .task-form select {
+    width: 15%; /* Adjust width as needed */
+  }
+  
+  .task-form button {
+    background-color: transparent;
+    border: none;
+    color: #1d4ed8; /* Tailwind's blue-600 color */
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .task-form button:hover {
+    text-decoration: underline;
+  }
+  
