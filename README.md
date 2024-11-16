@@ -1,102 +1,123 @@
-Task Management Application
-A simple and efficient Task Management Application built with React and Vite. The app allows users to organize their daily tasks, set priorities, and stay on top of deadlines with features like categorization, search, and filtering. Task data is stored in the browser using Local Storage, ensuring persistence without requiring user accounts.
 
-Features
-1. Dashboard
-View tasks categorized as:
-Upcoming Tasks: Tasks with future deadlines.
-Overdue Tasks: Tasks past their due dates but incomplete.
-Completed Tasks: Tasks marked as done.
-2. Task Management
-Add Tasks: Include title, description, due date, and priority level (High, Medium, Low).
-Edit Tasks: Update task details as needed.
-Delete Tasks: Remove tasks permanently.
-3. Priority Levels
-Assign tasks a priority level to help users focus:
-High Priority
-Medium Priority
-Low Priority
-4. Search and Filter
-Search: Quickly find tasks by title.
-Filter: View tasks by priority or completion status.
-5. Local Storage Integration
-Task data is stored locally in the browser, ensuring data persistence without requiring backend integration.
-Installation and Setup
-Prerequisites
-Node.js (v16 or higher)
-npm (comes with Node.js)
-Steps to Run the Application
-Clone the Repository:
+# EliteFitTask
 
-bash
-Copy code
-git clone https://github.com/sup-uj/elitefittask.git
-cd task-manager
-Install Dependencies:
+EliteFitTask is a task management application designed to help you organize, track, and manage tasks effectively. With sections for upcoming, overdue, and completed tasks, the app ensures that you can stay on top of your workload seamlessly.
 
-bash
-Copy code
-npm install
-Start the Development Server:
+## Features
 
-bash
-Copy code
-npm run dev
-Access the Application: Open your browser and navigate to http://localhost:5173.
+- Add, edit, and delete tasks.
+- Categorize tasks into Upcoming, Overdue, and Completed sections.
+- Search tasks using the search bar.
+- Intuitive scrolling navigation to key sections.
+- Tasks are stored in local storage for persistence.
 
-Building for Production
-To create a production-ready build of the app:
+---
 
-bash
-Copy code
-npm run build
-The optimized files will be generated in the dist directory.
+## Github Repo
 
-Technologies Used
-React: For building a dynamic user interface.
-Vite: As the build tool for a fast and modern development experience.
-CSS: For styling the application.
-Local Storage: For persisting task data.
-Folder Structure
-php
-Copy code
-task-manager/
-│
+[Codebase](https://sup-uj.github.io/elitefittask)
+
+---
+
+## Project Structure
+
+The project is developed using React, Material UI, and local storage. The folder structure is simple for ease of navigation and development:
+
+```
+elitefittask/
 ├── public/
-│   └── index.html         # Main HTML file
-│
 ├── src/
-│   ├── components/        # React components
-│   │   ├── Dashboard.jsx
-│   │   ├── TaskForm.jsx
-│   │   └── TaskList.jsx
-│   │
-│   ├── hooks/             # Custom hooks
-│   │   └── useLocalStorage.js
-│   │
-│   ├── styles/            # CSS styles
-│   │   └── App.css
-│   │
-│   ├── App.jsx            # Main React App component
-│   └── main.jsx           # Entry point for React
-│
-└── vite.config.js         # Vite configuration
-Future Enhancements
-Add authentication for multi-user support.
-Integrate a backend for task syncing across devices.
-Implement notifications/reminders for upcoming and overdue tasks.
-Enhance the UI with animations and advanced styling frameworks like Material UI.
-Contributing
-Contributions are welcome!
-To contribute:
+│   ├── components/    # Reusable components
+│   ├── assets/        # Static files and images
+│   ├── App.js         # Main application file
+│   ├── index.js       # Entry point for the React application
+├── README.md          # Project documentation
+├── package.json       # Dependencies and scripts
+```
 
-Fork the repository.
-Create a feature branch: git checkout -b feature-name.
-Commit your changes: git commit -m "Add feature-name".
-Push to the branch: git push origin feature-name.
-Open a pull request.
-License
-This project is licensed under the MIT License.
+---
 
-Contact
-For questions or suggestions, feel free to reach out at your-jutkarsh131@gmail.com or create an issue in the repository.
+## Getting Started
+
+Follow these steps to set up and run the project on your local machine:
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (v14 or later)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Setup Instructions
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/sup-uj/elitefittask.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd elitefittask
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm start
+   ```
+
+5. Open the application in your browser at:
+
+   ```
+   http://localhost:5173
+   ```
+
+---
+
+## Deployment
+
+The project can be easily deployed to GitHub Pages. To deploy:
+
+1. Build the application:
+
+   ```bash
+   npm run build
+   ```
+
+2. Deploy the build to GitHub Pages:
+
+   ```bash
+   npm run deploy
+   ```
+
+---
+
+## Contributing
+
+Contributions are welcome! If you’d like to contribute:
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature-name`.
+3. Commit your changes: `git commit -m 'Add some feature'`.
+4. Push to the branch: `git push origin feature-name`.
+5. Submit a pull request.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Contact
+
+If you have any questions or suggestions, feel free to contact me via the repository.
