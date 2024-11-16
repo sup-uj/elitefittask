@@ -16,6 +16,7 @@ EliteFitTask is a task management application designed to help you organize, tra
 ## Github Repo
 
 [Codebase](https://sup-uj.github.io/elitefittask)
+[Video](https://drive.google.com/file/d/1246790YmU4AEwHctTEtDgmAd1B1ZqXkD/view?usp=drive_link)
 
 ---
 
